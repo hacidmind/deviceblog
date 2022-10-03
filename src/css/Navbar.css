@@ -20,8 +20,10 @@ li a {
 
 li a:hover {
     background-color: #111;
+    color: rgb(230, 182, 182);
 }
 
 .color{
     color: crimson;
 }
+

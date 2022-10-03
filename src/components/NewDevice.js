@@ -13,7 +13,7 @@ const NewDevice = () => {
         // alert(`${title} ${coo} ${body}`)
         const blog = { title, coo, body }
         // console.log(blog);
-        fetch('http://localhost:8000/blogs', {
+        fetch('https://my-json-server.typicode.com/hacidmind/deviceDb/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)

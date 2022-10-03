@@ -17,8 +17,8 @@ const BlogList = ({blogs}) => {
                         </div>
 
                        
-                        <p className="text-justify">{laptop.body}</p>
-                        <Link to={`/blog/${laptop.id}`}>Read More......</Link>
+                        <p className="text-justify">{laptop.body.slice(0, 150)} <Link to={`/blog/${laptop.id}`}>Read More......</Link></p>
+                        
                     </div>
                 ))
             }

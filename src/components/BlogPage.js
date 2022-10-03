@@ -1,4 +1,4 @@
-import { useParams, useNavigate} from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from "../useCustomHook";
 import Spinner from 'react-bootstrap/Spinner';
 
@@ -30,18 +30,24 @@ const BlogPage = () => {
             {
                 laptop && (
                     <article className="container">
-                        <h2>{laptop.title}</h2>
-                        <button className="btn btn-danger float-end" onClick={handledelete}>Delete</button>
-                        <div>
-                            <i className="text-info">{laptop.coo}</i>
-                        </div>
+                        <div className="row">
+                            <div className="col-12">
 
-                        <img src={laptop.pix} alt={laptop.title} />
-                        <p className="text-justify">{laptop.body}</p>
+
+                                <h2>{laptop.title}</h2>
+                                <button className="btn btn-danger float-end" onClick={handledelete}>Delete</button>
+                                <div>
+                                    <i className="text-info">{laptop.coo}</i>
+                                </div>
+
+                                <img src={laptop.pix} alt={laptop.title} className="img-fluid mt-2" />
+                                <p className="text-justify">{laptop.body}</p>
+                            </div>
+                        </div>
                     </article>
                 )
             }
-            
+
         </div>
     );
 }
